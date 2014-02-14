@@ -1,9 +1,25 @@
 .controls
 {
-  background-color: yellow;
+  color: white;
 }
 
 body, html 
 {
-  background-color: green;
+  background-image:url('kitty.png');
 }
+
+#content
+{
+  width: 500px; 
+  height: 300px; 
+  margin: 0 0 20px; 
+  background-color: black; 
+  color: white;
+  border: 1px solid white;
+}
+
+#name, #field
+{
+  width:150px;
+}
+

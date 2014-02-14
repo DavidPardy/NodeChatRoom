@@ -7,10 +7,9 @@ html
     script(src='/socket.io/socket.io.js')
     script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
   body
-    #content(style='width: 500px; height: 300px; margin: 0 0 20px; background-color: black; color: white;')
+    #content
     .controls
-      | Name
-      input#name(style='width:350px;')
+      input#name(placeholder='Enter your name here...')
       br
-      input#field(style='width:350px;')
+      input#field(placeholder='Chat here...')
       input#send(type='button', value='send')

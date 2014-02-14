@@ -23,7 +23,7 @@ window.onload = function() {
 
   sendButton.onclick = function() {
     if(name.value == "") {
-      alert("type your name broski...");
+      //do nothing
     }
     else {
       var text = field.value;
@@ -38,7 +38,7 @@ window.onload = function() {
       $('#field').val('');
     }
     else {
-      alert("type your name in dude...");
+      //do nothing
     }
   });
 }
