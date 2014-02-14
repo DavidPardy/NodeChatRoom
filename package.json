@@ -3,7 +3,8 @@
   "description": "hello world test app",
   "version": "0.0.1",
   "private": true,
-  "dependensives": {
-    "express": "3.x"
+  "dependencies": {
+    "logfmt": "~0.21.0",
+    "express": "~3.4.8"
   }
 }
