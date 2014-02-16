@@ -15,11 +15,13 @@ window.onload = function() {
         html += messages[i].message + '<br />';
       }
       content.innerHTML = html;
-    } 
+    }
     else {
       console.log("There is a problem: ", data);
     }
   });
+
+  $("#name").focus();
 
   sendButton.onclick = function() {
     if(name.value == "") {
