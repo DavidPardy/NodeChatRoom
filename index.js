@@ -10,7 +10,7 @@ app.get("/", function(req, res){
   res.render("page");
 });
 
-var io = require('socket.io').listen(app.listen(port));
+var io = require('socket.io').listen(app.listen(port || process.env.PORT));
 
 io.sockets.on('connection', function (socket) {
   socket.emit('message', { message: 'Welcome to Davids Chat Room' });
