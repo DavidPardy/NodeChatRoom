@@ -4,9 +4,9 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
-    "logfmt": "~0.21.0",
-    "express": "~3.4.8",
+    "express": "^3.4.8",
     "jade": "latest",
+    "logfmt": "^0.21.0",
     "socket.io": "latest"
   }
 }
