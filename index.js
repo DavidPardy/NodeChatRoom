@@ -1,6 +1,6 @@
 var express = require("express");
 var app = express();
-//var port = 3700 || process.env.PORT;
+var port = 3700 || process.env.PORT;
 
 app.set('views', __dirname + '/tpl');
 app.set('view engine', "jade");
@@ -10,7 +10,7 @@ app.get("/", function(req, res){
   res.render("page");
 });
 
-var io = require('socket.io').listen(app.listen(process.env.PORT));
+var io = require('socket.io').listen(app.listen(port));
 
 io.sockets.on('connection', function (socket) {
   socket.emit('message', { message: 'Welcome to Davids Chat Room' });
