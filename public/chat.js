@@ -43,5 +43,7 @@ window.onload = function() {
       //do nothing
     }
   });
+  var objDiv = document.getElementById("content");
+  objDiv.scrollTop = objDiv.scrollHeight;
 }
 
