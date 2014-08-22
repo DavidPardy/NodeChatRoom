@@ -1,6 +1,6 @@
 window.onload = function() {
   var messages = [];
-  var socket = io.connect('http://localhost:3700');
+  var socket = io.connect('http://safe-forest-9485.herokuapp.com');
   var field = document.getElementById("field");
   var sendButton = document.getElementById("send");
   var content = document.getElementById("content");
